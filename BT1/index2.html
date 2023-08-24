@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let c = +prompt("moi nhap do c")
+        do {
+            if (c > 100) {
+                while(c>100){
+                    alert(" Giam nhiet do")
+                    c = +prompt( "moi nhap lai")
+                }
+                while(c<20){
+                    alert(" tang nhiet do")
+                    c = +prompt( "moi nhap lai")
+                }
+                console.log(c)
+                break
+            }
+            if(c<20){
+                while(c<20){
+                    alert(" Tang nhiet do")
+                    c = +prompt( "moi nhap lai")
+                }
+                while(c>100){
+                    alert(" giam nhiet do")
+                    c = +prompt( "moi nhap lai")
+                }
+                console.log(c)
+                break
+            }
+            console.log(c)
+        } while (20 <  c && c < 100)
+    </script>
+</body>
+
+</html>
